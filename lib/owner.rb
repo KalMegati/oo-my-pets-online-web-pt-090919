@@ -58,7 +58,7 @@ class Owner
   end
   
   def list_pets
-    cats.concat(dogs).map { |pet| pet.name }
+    "I have #{dogs.length} dogs, and #{cats.length} cat(s)."
   end
 
 end
