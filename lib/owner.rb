@@ -42,6 +42,10 @@ class Owner
     Dog.new(name, self)
   end
   
+  def feed_cats
+    self.cats.map { |catto| catto.mood = "happy"
+  end
+  
   def walk_dogs
     self.dogs.map { |doggo| doggo.mood = "happy" }
   end
