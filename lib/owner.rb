@@ -56,5 +56,9 @@ class Owner
     self.dogs.map { |doggo| doggo.mood = "nervous" }
     self.dogs.map { |doggo| doggo.owner = nil }
   end
+  
+  def list_pets
+    cats.concat(dogs)
+  end
 
 end
